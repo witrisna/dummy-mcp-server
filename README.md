@@ -1,4 +1,6 @@
-A dummy MCP (Model Context Protocol) server built with Express and the MCP TypeScript SDK. It uses OAuth 2.0 bearer token authentication via ForgeRock/PingAM and exposes a set of tools over HTTP.
+# dummy-mcp-server
+
+A dummy MCP (Model Context Protocol) server built with Express and the MCP TypeScript SDK. It uses OAuth 2.0 bearer token authentication via Authorization Server and exposes a set of tools over HTTP.
 
 ## Tools
 
