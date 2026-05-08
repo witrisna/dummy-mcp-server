@@ -53,7 +53,7 @@ OAuth metadata is automatically advertised at:
 
 Add this server to your Claude Code MCP configuration. You will need a valid OAuth access token from the configured issuer.
 
-### Project-level config (`.claude/settings.json`)
+### Project-level config (`.claude.json`)
 
 ```json
 {
@@ -74,19 +74,6 @@ Add this server to your Claude Code MCP configuration. You will need a valid OAu
 ### OAuth Application Configuration
 ![img.png](img.png)
 
-### User-level config (`~/.claude/settings.json`)
+### config (`~/.claude.json`)
 
 Use the same snippet above in your global settings file to make the server available across all projects.
-
-### Via Claude Code CLI
-
-```bash
-claude mcp add --transport http aic-mcp-server2 http://localhost:3000/mcp \
-  --header "Authorization: Bearer <your-access-token>"
-```
-
-After adding the server, verify it is connected:
-
-```bash
-claude mcp list
-```
